@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <link rel="stylesheet" href="css/crud.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow  bg-white rounded justify-content-center">
+        <div class="container-fluid">
+          <img src="img/pokemon-trading-card-game9373.logowik.com.png" alt="" class="navbar-brand logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="pokejuego.html">Juego</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="pokedex.html">Pokedex</a>
+              </li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true"><li>Agregar Pokemon</li></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+
+      <div class="padre">
+        <div class="titulo container d-flex justify-content-center mt-5">
+            <h2>Aqui podra agregar el pokemon que desee</h2>
+        </div>
+        <div class="link container mt-5">
+            <div class="alert alert-primary" role="alert">
+                <h4 class="alert-heading">Guia!</h4>
+                <p>Para agregar un pokemon debes simplemente agregar el numero de pokedex nacional del pokemon el cual usted desee agregar.<br><br>
+                    si no conoces el numero de pokedex puedes revisarlo en este link.
+                </p>
+                <hr>
+                <a href="https://www.pokemon.com/el/pokedex" class="sitio">Sitio oficial Pokemon</a>
+              </div>
+        </div>
+
+        <div class="agg container mt-5">
+            <form action="" method="get">
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Agregue aqui el numero de pokedex del pokemon" aria-label="Recipient's username" aria-describedby="basic-addon2" id="pokeInp" >
+    <div class="input-group-append">
+      <button class="btn btn-outline-success" type="button" onclick="obtenerPokemon()" id="Ver">Agregar</button>
+    </div>
+        </div>
+    </form>
+      </div>
+
+      <div class="container d-flex justify-content-center" id="pokeMuestra"></div>
+      <div class="enviar container" id="aggPoke">
+
+      </div>
+      <button style="width: 260px; margin-left: 107px;" type="button" class="btn btn-dark ml-3" id="idAgg">Agregar a la pokedex</button>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/crud.js"></script>
+    <script src="js/jquery.min.js"></script>
+</body>
+</html>

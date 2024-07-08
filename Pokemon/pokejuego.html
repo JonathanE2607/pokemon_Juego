@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pokejuego.css">
+    <title>Pokejuego</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow  bg-white rounded justify-content-center">
+        <div class="container-fluid">
+          <img src="img/pokemon-trading-card-game9373.logowik.com.png" alt="" class="navbar-brand logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><li>Juego</li></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="pokedex.html">Pokedex</a>
+              </li class="nav-item">
+                <a class="nav-link " href="crud.html" tabindex="-1" aria-disabled="true">Agregar Pokemon</a>
+              </li>
+            </ul>
+          </div>
+          <label id="contador"> Puntos: 0</label>
+        </div>
+      </nav> 
+<div class="fondo">
+  <div class="container d-flex justify-content-center mt-3" id="alertNo">
+  </div>
+<div class="container d-flex justify-content-around">
+      <div class="scene scene--card" id="cartaUno">
+        <div class="card ">
+          <div class="card__face card__face--back" id="cartaFrenteUno">
+           
+          </div>
+          <div class="card__face card__face--front"><img src="https://i.etsystatic.com/29988796/r/il/e48668/3102482850/il_570xN.3102482850_kznq.jpg" id="cartaUnoAtras" class="atras"></div>
+        </div>
+      </div>
+      <div class="scene scene--card" id="cartaDos">
+        <div class="card">
+          <div class="card__face card__face--back" id="cartaFrenteDos">
+            
+          </div>
+          <div class="card__face card__face--front"><img src="https://i.etsystatic.com/29988796/r/il/e48668/3102482850/il_570xN.3102482850_kznq.jpg" id="cartaDosAtras" class="atras"></div>
+        </div>
+      </div>
+ </div>
+
+ <div class="container d-flex justify-content-center" id="addBtn">
+  <button  type="button" class="btn btn-warning w-25" id="barajar" onclick="baraja()">Barajar</button>
+ </div>
+</div>
+    <script src="js/pokejuego.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
